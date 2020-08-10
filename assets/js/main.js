@@ -1,6 +1,8 @@
 $('document').ready(function(){
     $('.navbar').sticky();
-   
+//    $('.cutout').click(function(){
+//     app.notification.init("Update", "1.2.5 is available");
+//    })
     $('.background-loader-overlay').delay(2000).fadeOut(1000);
     $('.circular-capability > .lni').mouseenter(function(){
         $(this).css('font-size', 'larger')

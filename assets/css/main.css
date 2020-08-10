@@ -1,3 +1,6 @@
+body{
+    max-width: 100%!important;
+}
 @media (max-width: 767px) {
 
     h1 .a{
@@ -73,6 +76,7 @@ color: #000;
 }
 h1{
     position: absolute;
+    animation-delay: 3s;
 }
 h1 .a{
     font-size:77px;
@@ -87,6 +91,8 @@ h1 .b{
 .section-2{
     background-color: #2AC940;
     padding:88px 0;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
 }
 .section-2 p{
     margin: 0 65px;
@@ -128,12 +134,13 @@ m{
     transition: font-size ease-in-out 0.2s!important;
 }
 .navbar-brand{
-    background-color: #2ac93fab;
+    background-color: #2ac93f;
+    opacity: .9;
     padding: 19px 26px;
    color: #212529;
     z-index:888!important;
     transition: background-color linear 0.3s!important;
-    animation-delay: 1s;
+    animation-delay: 4s;
 }
 .navbar-brand:hover{
     box-shadow: none!important;
@@ -226,7 +233,7 @@ figure{
         position: absolute;
         right: 0;
         bottom: 0;
-        margin: 3em;
+        margin: 1em;
         padding: 0 1em;
         max-width: 150px;
         border-right: 4px solid #fff;
@@ -237,7 +244,7 @@ figure{
     }
     
     figure.effect-apollo h2 {
-        text-align: left;
+        text-align: center;
     }
     
     figure.effect-apollo:hover img {

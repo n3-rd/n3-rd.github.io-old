@@ -4,12 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="assets/js/service-worker.js"></script>
     <link rel="stylesheet" href="assets/css/normalize.css">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/animate.min.css">
     <link rel="stylesheet" href="assets/css/LineIcons.css">
-    <link rel="stylesheet" href="assets/css/cssgram.css">
-    <link rel="stylesheet" href="assets/css/imagehover.min.css">
     <link rel="stylesheet" href="assets/css/aos.css">
     <link rel="stylesheet" href="assets/css/loaders.min.css">
     <link rel="stylesheet" href="assets/css/sanitize.css">
@@ -44,8 +43,9 @@
                 <div class="collapse navbar-collapse" id="ftco-nav">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item active"><a href="index.html" class="nav-link">Home</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link">Projects</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link">github</a></li>
+                        <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+                        <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+                        <li class="nav-item"><a href="https://n3-rd.github.io" class="nav-link">Github</a></li>
                     </ul>
                 </div>
             </div>
@@ -174,7 +174,7 @@
 
         </center>
 
-        <h2 class="text-center projects-header">
+        <h2 id="projects" class="text-center projects-header">
             <m>My Work</m>
         </h2>
 
@@ -182,53 +182,110 @@
 
             <div class="row">
                 <div class="col-xs-12 col-lg-4">
-                    <figure class="effect-apollo">
-						<img src="assets/img/dummy/1.png" class="project-img" alt="img18">
+                    <a href="demos/memories/index.html" target="blank" >
+                    <figure class="effect-lily">
+						<img src="assets/img/memories.PNG" alt="img12">
 						<figcaption>
-							<h2>Strong <span>Apollo</span></h2>
-							<p>Apollo's last game of pool was so strange.</p>
-							<a href="#">View more</a>
+							<div class="dark-text">
+								<h2>Memories</h2>
+								<p>A responsive blog template</p>
+							</div>
+							
 						</figcaption>			
-					</figure>
+                    </figure>
+                    </a>
                 </div>
                 <div class="col-xs-12 col-lg-4">
-                    <figure class="effect-apollo">
-						<img src="assets/img/dummy/2.png" class="project-img" alt="img18">
+                    <a href="demos/Banner/index.html" target="blank">
+                    <figure class="effect-lily">
+						<img src="assets/img/banner.PNG" alt="img12">
 						<figcaption>
-							<h2>Strong <span>Apollo</span></h2>
-							<p>Apollo's last game of pool was so strange.</p>
-							<a href="#">View more</a>
+							<div>
+								<h2>Banner</h2>
+								<p>A minimal dark landing page</p>
+							</div>
+							
 						</figcaption>			
-					</figure>
+                    </figure>
+                    </a> 
                 </div>
                 <div class="col-xs-12 col-lg-4">
-                    <figure class="effect-apollo">
-						<img src="assets/img/dummy/3.png" class="project-img" alt="img18">
+                    <a href="demos/verify-er/index.html" target="blank">
+                    <figure class="effect-lily">
+						<img src="assets/img/verify-er.PNG" alt="img12">
 						<figcaption>
-							<h2>Strong <span>Apollo</span></h2>
-							<p>Apollo's last game of pool was so strange.</p>
-							<a href="#">View more</a>
+							<div class="dark-text">
+								<h2>Verify-er</h2>
+								<p>A simple phone number verifier</p>
+							</div>
+							
 						</figcaption>			
-					</figure>
+                    </figure>
+                    </a>
                 </div>
                 <div class="col-xs-12 col-lg-4">
-                    
+                    <a href="demos/shorten-er/index.html">
+                    <figure class="effect-lily">
+						<img src="assets/img/shorten.png" alt="img12">
+						<figcaption>
+							<div>
+								<h2>Shorten-er</h2>
+								<p>A simple mobile link shortener app</p>
+							</div>
+							
+						</figcaption>			
+                    </figure>
+                    </a>
                 </div>
 
 
             </div>
 
-            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            
 
         </div>
 
+        <div id="contact" class="container">
+            <h2 class="text-center projects-header">
+                <m>Contact Me:</m>
+            </h2>
+<div class="contact-links">
+    <h2 class="text-center projects-header">
+        <a href='mailto:godwinjdayo@gmail.com'>Email</a>
+    </h2>
+    <h2 class="text-center projects-header">
+        <a href='#'>FaceBook</a>
+    </h2>
+    <h2 class="text-center projects-header">
+        <a href='#'>Twitter</a>
+    </h2>
+</div>
+            
+
+<div class="footer-credits"> Made With <i class="lni lni-heart-filled animated pulse infinite"></i> By Godwin Jemegah</div>
+        </div>
+
+
+        
 
 </body>
 <script src="assets/js/jquery.min.js"></script>
 <script src="assets/js/jquery.sticky.js"></script>
 <script src="assets/js/bootstrap.min.js"></script>
 <script src="assets/js/aos.js"></script>
-<script src="assets/js/service-worker.js"></script>
+<script>
+    if ('serviceWorker' in navigator) {
+        window.addEventListener('load', function () {
+            navigator.serviceWorker.register('assets/js/service-worker.js').then(function (registration) {
+                console.log('Success! with :', registration.scope);
+            }, function (err) {
+                console.log('Failed with :', err)
+            })
+        })
+    }
+
+
+</script>
 <script src="assets/js/main.js"></script>
 
 </html>

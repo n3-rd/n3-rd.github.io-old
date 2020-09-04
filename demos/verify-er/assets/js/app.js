@@ -5,7 +5,7 @@ $('.back').click(function(){
 })
 
 // your Rapid Api Key Here
-var rapidApiKey = ""
+
 
 $('#verify-button').click(function(){
         var settings = {
@@ -15,7 +15,7 @@ $('#verify-button').click(function(){
             "method": "GET",
             "headers": {
                 "x-rapidapi-host": "veriphone.p.rapidapi.com",
-                "x-rapidapi-key": rapidApiKey
+                "x-rapidapi-key": "4d28f8767fmsh77c6703eafddd9fp1dc387jsn58cdd45aac27"
             }
         }
         

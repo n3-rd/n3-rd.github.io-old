@@ -295,3 +295,9 @@ figure.effect-lily:hover p {
   -webkit-transition-duration: 0.35s;
   transition-duration: 0.35s;
 }
+.facebook-pixel-display{
+  display: none;
+}
+.project-section p{
+  font-weight: 600px;
+}

@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 /* Animations Styles */
 
 .fade-in {
@@ -28,7 +28,7 @@
   from { opacity: 0; }
   to   { opacity: 1; }
 }
-=======
+
 /* Animations Styles */
 
 .fade-in {
@@ -58,4 +58,4 @@
   from { opacity: 0; }
   to   { opacity: 1; }
 }
->>>>>>> 9a117c35e5b91f9a28cbc8d805f104f3c3b8c1f6
+

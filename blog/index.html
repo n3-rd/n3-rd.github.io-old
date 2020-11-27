@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CMS.js</title>
-    <meta name="description" content="The JavaScript Site Generator">
-    <meta name="author" content="">
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
-    <link rel="stylesheet" href="./css/animations.css">
-    <link rel="stylesheet" href="./css/poole.min.css">
-    <link rel="stylesheet" href="./css/poole.overrides.min.css">
-    <!--[if lt IE 9]>
-      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>N3RD - The Web Development Blog</title>
+    <meta name="description" content="The JavaScript Site Generator" />
+    <meta name="author" content="" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <link rel="stylesheet" href="./css/animations.css" />
+    <link rel="stylesheet" href="./css/poole.min.css" />
+    <link rel="stylesheet" href="./css/poole.overrides.min.css" />
+    <link rel="stylesheet" href="/./assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/./assets/css/LineIcons.css" />
+    <link rel="stylesheet" href="/./assets/css/main.css" />
+    <link rel="stylesheet" href="/./assets/css/tomorrow-night.css" />
     <noscript>Please enable JavaScript to view this site.</noscript>
   </head>
   <body>
@@ -21,21 +22,45 @@
       <!-- Header -->
       <header class="masthead">
         <h3 class="masthead-title">
-        <a href="#" class="sitename" title="Home">
-          CMS.js
-        </a>
-        <small class="tagline">
-          The Javascript Site Generator
-        </small>
+          <a href="#" class="sitename" title="Home"> N3RD - Blog </a>
         </h3>
         <!-- Navigation -->
-        <nav class="nav">
-          <ul>
-            <li><a href="#/posts">Posts</a></li>
-            <li><a href="//github.com/chrisdiana/cms.js" target="_blank">Github</a></li>
-            <li><a href="#/pages/about">About</a></li>
-            <li><a href="#/pages/links">Links</a></li>
-          </ul>
+        <nav class="navbar navbar-expand-lg navbar-static-top" id="navbar">
+          <div class="container">
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#ftco-nav"
+              aria-controls="ftco-nav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="lni lni-menu"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="ftco-nav">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                  <a href="https://n3-rd.github.io">Home</a>
+                </li>
+                <li class="nav-item"><a href="#/posts">Posts</a></li>
+                <li class="nav-item">
+                  <a href="https://github.com/n3-rd" target="_blank"
+                    ><i class="lni lni-github-original"></i
+                  ></a>
+                </li>
+                <li class="nav-item"><a href="#/pages/about">About</a></li>
+                <li class="nav-item">
+                  <a
+                    href="https://www.buymeacoffee.com/Godwinjemegah"
+                    target="_blank"
+                    >Donate</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
         </nav>
       </header>
 
@@ -43,10 +68,37 @@
       <div id="cms"></div>
 
       <!-- Footer -->
-      <footer class="footer">
-        <small class="footer-text">
-        </small>
-      </footer>
+      <div id="contact" class="container">
+        <h2 class="text-center projects-header">
+          <m>Contact Me:</m>
+        </h2>
+        <div class="contact-links">
+          <h2 class="text-center projects-header">
+            <a href="mailto:godwinjdayo@gmail.com" target="blank">Email</a>
+          </h2>
+          <h2 class="text-center projects-header">
+            <a href="https://www.facebook.com/godwin.jemegah/" target="blank"
+              >FaceBook</a
+            >
+          </h2>
+          <h2 class="text-center projects-header">
+            <a href="https://twitter.com/web_n3rd" target="blank">Twitter</a>
+          </h2>
+          <h2 class="text-center projects-header">
+            <a href="https://www.buymeacoffee.com/Godwinjemegah" target="_blank"
+              >Buy Me A Cofee</a
+            >
+
+            <!-- <a class="dbox-donation-button" href="https://donorbox.org/buy-me-a-cofee">Donate</a> -->
+          </h2>
+
+          <div class="footer-credits">
+            Made With
+            <i class="lni lni-heart-filled animated pulse infinite"></i> By
+            Godwin Jemegah
+          </div>
+        </div>
+      </div>
     </div>
 
     <!-- ES5 Polyfills -->
@@ -55,5 +107,23 @@
     <script src="./js/cms.js"></script>
     <!-- Config -->
     <script src="./js/config.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script> -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/highlight.min.js"></script>
+
+    <script src="/./assets/js/jquery.min.js"></script>
+    <script src="/./assets/js/bootstrap.min.js"></script>
+    <script>
+      $("document").ready(function () {
+        function highlightCode() {
+          var pres = document.querySelectorAll("code");
+          for (var i = 0; i < pres.length; i++) {
+            hljs.highlightBlock(pres[i]);
+          }
+        }
+        setInterval(function () {
+          highlightCode();
+        }, 2000);
+      });
+    </script>
   </body>
 </html>

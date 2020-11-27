@@ -60,6 +60,12 @@ a:hover{
   color: #212529;
   text-decoration: none;
 }
+h1{
+  position: relative!important;
+}
+.post-tag{
+  background: #2ac93f;
+}
 .navbar a {
   color: #000;
   font-weight: 200;

@@ -19,6 +19,10 @@ var config = {
     prefix: 'blog',
   },
 
+  siteAuthor: 'Godwin Jemegah',
+
+  siteEmail: 'godwinjdayo@gmail.com',
+
   // The name of the layouts directory.
   layoutDirectory: 'layouts',
 

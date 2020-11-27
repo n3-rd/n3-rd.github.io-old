@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!-- Page List Template -->
 <div class="pages-list fade-in">
   <h1><%= data.type %></h1>
@@ -9,4 +10,17 @@
       <p><%= page.excerpt %></p>
     <% } %>
   <% }) %>
+=======
+<!-- Page List Template -->
+<div class="pages-list fade-in">
+  <h1><%= data.type %></h1>
+  <% data.pages.forEach(function(page) { %>
+    <h2>
+      <a href="<%= page.permalink %>"><%= page.title %></a>
+    </h2>
+    <% if(page.excerpt) { %>
+      <p><%= page.excerpt %></p>
+    <% } %>
+  <% }) %>
+>>>>>>> 9a117c35e5b91f9a28cbc8d805f104f3c3b8c1f6
 </div>

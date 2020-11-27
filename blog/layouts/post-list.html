@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!-- Post List Template -->
 <div class="posts-list fade-in">
   <% data.posts.forEach(function(post) { %>
@@ -15,4 +16,23 @@
       </article>
     <% } %>
   <% }) %>
+=======
+<!-- Post List Template -->
+<div class="posts-list fade-in">
+  <% data.posts.forEach(function(post) { %>
+    <% if(!post.draft) { %>
+      <article class="post">
+        <h1 class="post-title">
+          <a href="<%= post.permalink %>"><%= post.title %></a>
+        </h1>
+        <time class="post-date">5/28/2015</time>
+        <div class="post-content">
+          <% if(post.excerpt) { %>
+            <p><%= post.excerpt %></p>
+          <% } %>
+        </div>
+      </article>
+    <% } %>
+  <% }) %>
+>>>>>>> 9a117c35e5b91f9a28cbc8d805f104f3c3b8c1f6
 </div>

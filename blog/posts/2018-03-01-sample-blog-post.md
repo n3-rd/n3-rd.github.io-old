@@ -5,12 +5,14 @@ excerpt: This blog post shows a few different types of content that's supported 
 date: 2018-03-01
 tags: sampletag
 author: Mark
+# featuredImage: images/2.png
 ---
 
 This blog post shows a few different types of content that's supported and styled with Markdown. Basic typography, images, and code are all supported.
 
 -----
 
+![An image](https://n3-rd.github.io/assets/img/javascript.svg)
 Cum sociis natoque penatibus et magnis [dis parturient montes](#), nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.
 
 Curabitur blandit tempus porttitor. **Nullam quis risus eget urna mollis** ornare vel eu leo. Nullam id ~~dolor id~~ nibh ultricies vehicula ut id elit.
@@ -27,6 +29,8 @@ Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis moll
 Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
 
 `Example code block`
+
+<button class="button-save large">Big Fat Button</button>
 
 Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa.
 

@@ -545,19 +545,6 @@
 <script src="assets/js/jquery.sticky.js"></script>
 <script src="assets/js/bootstrap.min.js"></script>
 <script src="assets/js/aos.js"></script>
-<script>
-    if ('serviceWorker' in navigator) {
-        window.addEventListener('load', function () {
-            navigator.serviceWorker.register('assets/js/service-worker.js').then(function (registration) {
-                console.log('Success! with :', registration.scope);
-            }, function (err) {
-                console.log('Failed with :', err)
-            })
-        })
-    }
-
-
-</script>
 <script type="application/ld+json">
     {
       "@context": "https://schema.org/",

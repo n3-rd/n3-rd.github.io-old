@@ -5,7 +5,7 @@ excerpt: Cum sociis natoque penatibus et magnis dis parturient montes, nascetur 
 author: Chris
 ---
 
-<img src="../images/cmsjs.png">
+<img src="../blog/images/cmsjs.png">
 
 <p>
 Deploying a blog can be sometimes strenous, from Jekyll to Ghost CMS and Hugo, I've tried out quite a lot of

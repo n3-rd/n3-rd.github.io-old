@@ -28,6 +28,9 @@ nav {
   .footer {
     padding-bottom: 15px;
   }
+  p::first-letter{
+font-size: 22px;
+  }
   .sitename img {
     max-height: 32px;
   }

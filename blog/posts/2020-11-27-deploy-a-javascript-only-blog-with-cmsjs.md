@@ -10,13 +10,11 @@ author: Godwin Jemegah
 <img src="https://i.ibb.co/tzkZ3VC/cmsjs.png" alt="cmsjs banner">
 
 <p>
-Deploying a blog can be sometimes strenous, from Jekyll to Ghost CMS and Hugo, I've tried out quite a lot of
-CMS Deployment methods, but there's just one that more than meets my eye - CMS JS
+Deploying a blog can be sometimes strenous, from Jekyll to Ghost CMS and Hugo, I've tried out quite a lot of CMS Deployment methods, but there's just one that more than meets my eye - CMS JS
 </p>
 <p>
 CMS is a Javascript only(yes, javascript only!) blog CMS that can be deployed in only a matter of minutes.
-This ensures that you dont need any backend tools like Node JS or Ruby to have your own blog, CMS JS is a lightweight
-and simple alternative 
+This ensures that you dont need any backend tools like Node JS or Ruby to have your own blog, CMS JS is a lightweight and simple alternative 
 <img src="https://media.giphy.com/media/aWPGuTlDqq2yc/giphy.gif"/>
 </p>
 

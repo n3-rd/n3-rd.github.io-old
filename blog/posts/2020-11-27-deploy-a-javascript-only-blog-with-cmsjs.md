@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Deploy a javascript only blog with CMS JS
+date: 2020-11-27
+excerpt: This post shows you how to deploy a blog with just javascript!
 author: Godwin Jemegah
 ---
 

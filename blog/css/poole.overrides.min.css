@@ -31,6 +31,9 @@ nav {
   p::first-letter{
 font-size: 22px;
   }
+  code{
+    color: #2ac93f;
+  }
   .sitename img {
     max-height: 32px;
   }

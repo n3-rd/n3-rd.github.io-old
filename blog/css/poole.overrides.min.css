@@ -34,6 +34,9 @@ font-size: 22px;
   code{
     color: #2ac93f;
   }
+  #cms{
+    font-family: 'Noto Sans JP', sans-serif;
+  }
   .sitename img {
     max-height: 32px;
   }

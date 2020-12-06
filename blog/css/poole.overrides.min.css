@@ -28,9 +28,12 @@ nav {
   .footer {
     padding-bottom: 15px;
   }
-  p::first-letter{
-font-size: 22px;
-  }
+.post-title{
+  font-weight: 700;
+}
+h2,h3,h4,h5,h6{
+  font-weight: 500;
+}
   code{
     color: #2ac93f;
   }

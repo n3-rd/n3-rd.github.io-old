@@ -6,7 +6,8 @@ var config = {
 
   // Mode 'GITHUB' for Github Pages, 'SERVER' for Self Hosted
   // Defaults to Server mode if not specified
-  mode: 'GITHUB',
+  // mode: 'GITHUB',
+  mode: 'SERVER',
 
   // If Github mode is set, your Github username, repo name, 
   // and branch to get files from.

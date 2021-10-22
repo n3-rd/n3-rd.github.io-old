@@ -20,6 +20,41 @@ $accent-red:#ff004c;
         text-decoration: none;
 }
 
+@mixin for-phone-only {
+  @media (max-width: 599px) {
+    @content;
+  }
+}
+
+@mixin for-tablet-potrait-up {
+  @media (min-width: 600px) {
+    @content;
+  }
+}
+
+@mixin for-tablet-landscape-up {
+  @media (min-width: 900px) {
+    @content;
+  }
+}
+
+@mixin for-desktop-up {
+  @media (min-width: 1200px) {
+    @content;
+  }
+}
+
+@mixin for-big-desktop-up {
+  @media (min-width: 1800px) {
+    @content;
+  }
+}
+
+*::selection{
+  background-color: $linkColor;
+  color: $text-color;
+}
+
 body{
     overflow-x: hidden;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -29,19 +64,38 @@ header{
     height: 87vh;
     h1{
         margin-top: 1.3em;
+        @include for-phone-only{
+         margin-top: 1.8em;
+        }
+        @include for-tablet-potrait-up{
+          margin-top: 5em;
+        }
+        @include for-tablet-landscape-up{
+        margin-top: 1.3em;
+
+        }
         margin-left: 1.3em;
         font-size: 3.3rem;
         
   animation-delay: 3s;
   position: relative!important;
+  @include for-phone-only{
+    margin-left: 0.2em;
+  }
  
   .a{
       font-size: 3.7rem;
   font-weight: 200;
+  @include for-phone-only{
+    font-size: 3.1rem;
+  }
   }
   .b{
       font-size: 3.5rem;
       font-weight: 400;
+      @include for-phone-only{
+        font-size: 2.8rem;
+      }
   }
     }
 }
@@ -84,8 +138,12 @@ header{
   .section-2{
       background: $main-color;
   padding: 88px 0;
+  
   p{
     margin: 0 65px;
+    @include for-phone-only{
+      margin: 0 12px;
+    }
     // color: #fff;
     font-size: 1.9rem;
   }
